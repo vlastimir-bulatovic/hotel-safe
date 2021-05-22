@@ -1,0 +1,14 @@
+@mixin bg($color)
+    background-color: $color
+
+.bg 
+    &--grey
+        +bg($grey) 
+        &-dark
+            +bg($grey-dark)
+        &-light 
+            +bg($grey-light)
+    &--blue
+        +bg($blue)
+        &-light
+            +bg($blue-light)
